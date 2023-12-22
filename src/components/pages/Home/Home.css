@@ -1,0 +1,16 @@
+.App{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgb(46, 46, 46);
+  }
+  .slideshow{
+    width: 82.5%;
+    box-sizing: border-box;
+  }
+  .sidebar{
+    width: 17.5%;
+    box-sizing: border-box;
+  }
+  

@@ -1,0 +1,25 @@
+.accordion{
+    border-top: 1px solid #444444;
+}
+.accordion-header{
+    width: 100%;
+    font-size: 0rem 1rem;
+    padding: 2rem;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+}
+.arrow-icon{
+    font-size: 1.25em;
+}
+.accordion-content{
+    width: 100%;
+    padding:0rem 2.5rem;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+}

@@ -1,0 +1,27 @@
+.thumbnail-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .thumbnail-image {
+    cursor: pointer;
+    width: 8rem;
+    height: 6.25rem;
+    transition: background-color 0.3s, filter 0.3s;
+  }
+  
+  .thumbnail-image:hover {
+    background-color: #444;
+    border: 1px solid rgb(153, 153, 153);
+    padding: 0.5rem;
+    filter: brightness(1.2);
+  }
+  
+  .thumbnail-image.selected {
+    filter: brightness(1); 
+  }
+  
+  .thumbnail-image:not(.selected) {
+    filter: brightness(0.7) opacity(0.3); 
+  }

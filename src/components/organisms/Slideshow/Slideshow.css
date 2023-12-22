@@ -1,0 +1,13 @@
+.slideshow-gallery {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .big-image {
+    object-fit: cover;
+  }
+  
+  .slideshow-thumbnail-wrapper {
+    overflow-y: auto;
+  }
