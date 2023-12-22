@@ -4,11 +4,11 @@ import Button from "../../atoms/Button/Button";
 import "./Sidebar.css";
 import Loader from "../../atoms/Loader/Loader";
 
-const Sidebar = ({ className, loading,apiData }) => {
+const Sidebar = ({ className, loading, apiData }) => {
     console.log(apiData)
     console.log(apiData.artist)
 
-    
+
 
     return (
         <div className={`sidebar ${className}`}>
@@ -16,18 +16,54 @@ const Sidebar = ({ className, loading,apiData }) => {
                 <Loader />
             ) : (
                 <Accordion title="About Image" content={(<>
-                    <p>Lens</p><p>{apiData.lens}</p>
-                    <p>Capture Time</p><p>{apiData.capture_time_date}</p>
-                    <p>ISO</p><p>{apiData.iso_speed}</p>
-                    <p>Speed</p><p>{apiData.iso_speed_rating}</p>
-                    <p>FileName</p><p>{apiData.file_path}</p>
-                    <p>Artist</p><p>{apiData.artist}</p>
-                    <p>ImageSize</p><p>{apiData.size}</p>
-                    <p>WhiteBalance</p><p>{apiData.white_balance}</p>
-                    <p>Focal Length</p><p>{apiData.focal_length}</p>
-                    <p>Rating</p><p>{apiData.rating}</p>
-                    <p>Colour</p><p>{apiData.color}</p>
-                    <p>Camera</p><p>{apiData.camera}</p>
+                    <div className="accordion-div">
+                        <p>Lens:</p><span>{apiData.lens || "Not Available"}</span>
+                    </div>
+                    <div className="accordion-div">
+
+                        <p>Capture Time:</p><span>{apiData.capture_time_date || "Not Available"}</span>
+                    </div>
+                    <div className="accordion-div">
+
+                        <p>ISO:</p><span>{apiData.iso_speed || "Not Available"}</span>
+                    </div>
+                    <div className="accordion-div">
+
+                        <p>Speed:</p><span>{apiData.iso_speed_rating || "Not Available"}</span>
+                    </div>
+                    <div className="accordion-div">
+
+                        <p>FileName:</p><span>{apiData.file_path || "Not Available"}</span>
+                    </div>
+                    <div className="accordion-div">
+
+                        <p>Artist:</p><span>{apiData.artist || "Not Available"}</span>
+                    </div>
+                    <div className="accordion-div">
+
+                        <p>ImageSize:</p><span>{apiData.size || "Not Available"}</span>
+                    </div>
+                    <div className="accordion-div">
+
+                        <p>WhiteBalance:</p><span>{apiData.white_balance || "Not Available"}</span>
+                    </div>
+                    <div className="accordion-div">
+
+                        <p>Focal Length:</p><span>{apiData.focal_length || "Not Available"}</span>
+                    </div>
+                    <div className="accordion-div">
+
+                        <p>Rating:</p><span>{apiData.rating || "Not Available"}</span>
+                    </div>
+                    <div className="accordion-div">
+
+                        <p>Colour:</p><span>{apiData.color || "Not Available"}</span>
+                    </div>
+                    <div className="accordion-div">
+
+                        <p>Camera:</p><span>{apiData.camera || "Not Available"}</span>
+                    </div>
+
                 </>)} />
             )}
             <div className="button-container">

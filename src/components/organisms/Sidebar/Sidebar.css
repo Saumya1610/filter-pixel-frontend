@@ -23,3 +23,10 @@
     color: white;
     font-size: 0.9rem;
 }
+.accordion-div>p{
+font-size: 0.75rem;
+font-weight: bold;
+}
+.accordion-div>span{
+    font-size: 0.75rem;
+    }
