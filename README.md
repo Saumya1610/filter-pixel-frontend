@@ -12,5 +12,5 @@ The page will reload when you make changes.\
 # filter-pixel-frontend
 Screenshots 
 
-![My Image](images/f1.jpg)
-![My Image](images/f2.jpg)
+![My Image](images/f1.png)
+![My Image](images/f2.png)
